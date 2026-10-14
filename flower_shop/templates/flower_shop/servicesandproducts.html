@@ -1,0 +1,39 @@
+{% extends 'flower_shop/base.html' %}
+{% block title %}Services & Products · Petals and Poetry{% endblock %}
+{% block content %}
+<section class="page">
+  <h2>Services &amp; Products</h2>
+
+  <div class="grid">
+    <div class="card">
+      <div class="icon">🌷</div>
+      <h3>Everyday Bouquet</h3>
+      <p>A cheerful mix of seasonal blooms.</p>
+      <span class="price">from ₱650</span>
+    </div>
+    <div class="card">
+      <div class="icon">🌹</div>
+      <h3>Signature Bouquet</h3>
+      <p>Premium flowers with a handwritten poem.</p>
+      <span class="price">from ₱1,500</span>
+    </div>
+    <div class="card">
+      <div class="icon">🎁</div>
+      <h3>Events &amp; Gifting</h3>
+      <p>Weddings, birthdays, and custom orders.</p>
+      <span class="price">Request a quote</span>
+    </div>
+  </div>
+
+  <div class="band">
+    <h3>🌿 Flower Arrangement Workshops</h3>
+    <p>Two-hour guided sessions for beginners. All flowers, vases, and tools are provided, and you take your creation home. Held every Saturday afternoon.</p>
+    <a class="btn" href="{% url 'contact' %}">How to reserve a seat</a>
+  </div>
+
+  <div class="band cream">
+    <h3>📖 The Petals Library</h3>
+    <p>Our reading nook holds poetry, botany, and storybooks. Members can borrow up to three books at a time. Reading in the shop is always free, and tea is on us.</p>
+  </div>
+</section>
+{% endblock %}

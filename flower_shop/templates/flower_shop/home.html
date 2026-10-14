@@ -1,0 +1,28 @@
+{% extends 'flower_shop/base.html' %}
+{% block content %}
+<section class="page">
+  <div class="hero">
+    <h1>Flowers for every story</h1>
+    <p>Hand-tied bouquets, flower arrangement workshops, and a quiet little library to read among the blooms.</p>
+    <a class="btn" href="{% url 'servicesandproducts' %}">Explore our shop</a>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <div class="icon">💐</div>
+      <h3>Bouquets</h3>
+      <p>Fresh, seasonal, and tied by hand every morning.</p>
+    </div>
+    <div class="card">
+      <div class="icon">🌿</div>
+      <h3>Workshops</h3>
+      <p>Learn to arrange flowers in a relaxed, friendly session.</p>
+    </div>
+    <div class="card">
+      <div class="icon">📖</div>
+      <h3>Library</h3>
+      <p>Borrow poetry, gardening books, and gentle reads.</p>
+    </div>
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends 'flower_shop/base.html' %}
+{% load static %}
+{% block title %}Gallery · Petals and Poetry{% endblock %}
+{% block content %}
+<section class="page">
+  <h2>Gallery</h2>
+  <p>A glimpse of our blooms, workshops, and reading corner.</p>
+
+  <div class="tiles">
+    {% for css_class, label, photo in tiles %}
+      <figure class="tile {{ css_class }}">
+        <img src="{% static 'flower_shop/img/'|add:photo %}" alt="{{ label }}">
+        <figcaption>{{ label }}</figcaption>
+      </figure>
+    {% endfor %}
+  </div>
+</section>
+{% endblock %}
